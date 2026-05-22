@@ -1,0 +1,6 @@
+{
+  "name": "WPSD Status Card Mod",
+  "render_readme": true,
+  "filename": "dist/wpsd-radio-card.js",
+  "homeassistant": "2024.8.0"
+}

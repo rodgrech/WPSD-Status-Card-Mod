@@ -1,0 +1,75 @@
+# WPSD Status Card Mod
+
+A custom Lovelace card for displaying WPSD/DMR hotspot activity in Home
+Assistant.
+
+The card currently supports two styles:
+
+- `mcs2000`: Motorola MCS2000-inspired control head
+- `r7`: modern handheld/R7-inspired screen
+
+## Installation
+
+### Manual
+
+Copy:
+
+```text
+dist/wpsd-radio-card.js
+```
+
+to Home Assistant:
+
+```text
+/config/www/wpsd-radio-card.js
+```
+
+Then add the Lovelace resource:
+
+```text
+/local/wpsd-radio-card.js
+```
+
+Resource type:
+
+```text
+JavaScript module
+```
+
+## MCS2000 Example
+
+```yaml
+type: custom:wpsd-radio-card
+style: mcs2000
+title: Home Assistant WPSD
+callsign_entity: sensor.dmr_hotspot_callsign
+talkgroup_entity: sensor.dmr_hotspot_talkgroup
+mode_entity: sensor.dmr_hotspot_mode
+source_entity: sensor.dmr_hotspot_source
+loss_entity: sensor.dmr_hotspot_loss
+last_heard_entity: sensor.dmr_hotspot_last_heard
+status_entity: sensor.dmr_hotspot_status
+```
+
+Double-click the right-hand `Menu` button to invert the LCD colours.
+
+## R7 Example
+
+```yaml
+type: custom:wpsd-radio-card
+style: r7
+callsign_entity: sensor.dmr_hotspot_callsign
+talkgroup_entity: sensor.dmr_hotspot_talkgroup
+mode_entity: sensor.dmr_hotspot_mode
+source_entity: sensor.dmr_hotspot_source
+loss_entity: sensor.dmr_hotspot_loss
+ber_entity: sensor.dmr_hotspot_ber
+name_entity: sensor.dmr_hotspot_name
+timestamp_entity: sensor.dmr_hotspot_timestamp
+```
+
+## Related Integration
+
+This card pairs with:
+
+[WPSD Home Assistant](https://github.com/rodgrech/WPSD-home-assistant)

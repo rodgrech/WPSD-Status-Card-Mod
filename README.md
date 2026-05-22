@@ -36,6 +36,34 @@ Resource type:
 JavaScript module
 ```
 
+### HACS
+
+Add this repository to HACS as a custom repository with category:
+
+```text
+Dashboard
+```
+
+After installing, add this dashboard resource if HACS does not add it
+automatically:
+
+```text
+/hacsfiles/WPSD-Status-Card-Mod/wpsd-radio-card.js
+```
+
+Resource type:
+
+```text
+JavaScript module
+```
+
+Then hard refresh your browser or clear the Home Assistant frontend cache. If
+the resource has not loaded, Home Assistant will show:
+
+```text
+Custom element not found: wpsd-radio-card
+```
+
 ## MCS2000 Example
 
 ```yaml

@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.10 - 2026-05-23
+
+- Added repository icon/logo assets for HACS presentation.
+- Added a custom-card picker icon fallback.
+
 ## 0.1.9 - 2026-05-23
 
 - Updated the README dashboard screenshot with the polished MCS2000 and R7

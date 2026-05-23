@@ -3,6 +3,8 @@
 A custom Lovelace card for displaying WPSD/DMR hotspot activity in Home
 Assistant.
 
+![WPSD Status Card logo](icon.png)
+
 The card currently supports two styles:
 
 - `mcs2000`: Motorola MCS2000-inspired control head
@@ -127,6 +129,8 @@ See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 Recent changes:
 
+- `0.1.10`: added HACS repository icon/logo assets and a card-picker icon
+  fallback.
 - `0.1.9`: refreshed the README dashboard screenshot with the polished
   MCS2000 and R7 layouts.
 - `0.1.8`: slimmed the R7 card and added centered channel labels such as

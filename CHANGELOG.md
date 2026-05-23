@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.9 - 2026-05-23
+
+- Updated the README dashboard screenshot with the polished MCS2000 and R7
+  card layout.
+
 ## 0.1.8 - 2026-05-23
 
 - Slimmed the R7 card proportions.

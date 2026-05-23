@@ -127,6 +127,8 @@ See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 Recent changes:
 
+- `0.1.9`: refreshed the README dashboard screenshot with the polished
+  MCS2000 and R7 layouts.
 - `0.1.8`: slimmed the R7 card and added centered channel labels such as
   `91 Worldwide`.
 - `0.1.7`: added Home Assistant custom-card metadata to avoid card picker

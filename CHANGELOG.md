@@ -1,5 +1,11 @@
 # Changelog
 
+## 0.1.6 - 2026-05-23
+
+- Added README screenshots from the card dashboard.
+- Split the R7 caller area into separate callsign and `Name Country` lines.
+- Added `country_entity` to the R7 README example.
+
 ## 0.1.5 - 2026-05-23
 
 - Removed the yellow highlight from the MCS2000 volume knob.

@@ -8,6 +8,20 @@ The card currently supports two styles:
 - `mcs2000`: Motorola MCS2000-inspired control head
 - `r7`: modern handheld/R7-inspired screen
 
+## Screenshots
+
+### Dashboard
+
+![WPSD radio cards dashboard](docs/images/overview.png)
+
+### MCS2000 Inspired
+
+![MCS2000 network receive](docs/images/mcs2000-net.png)
+
+### R7 Inspired
+
+![R7 inspired card](docs/images/r7.png)
+
 ## Installation
 
 ### Manual
@@ -95,6 +109,7 @@ source_entity: sensor.dmr_hotspot_source
 loss_entity: sensor.dmr_hotspot_loss
 ber_entity: sensor.dmr_hotspot_ber
 name_entity: sensor.dmr_hotspot_name
+country_entity: sensor.dmr_hotspot_country
 timestamp_entity: sensor.dmr_hotspot_timestamp
 ```
 
@@ -110,6 +125,8 @@ See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 Recent changes:
 
+- `0.1.6`: added README screenshots and split the R7 caller area into
+  callsign and `Name Country` lines.
 - `0.1.5`: removed the yellow volume knob highlight and aligned the
   microphone socket with `Opt`.
 - `0.1.4`: polished the MCS2000 control layout, expanded the LCD area,

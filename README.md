@@ -110,6 +110,8 @@ See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 Recent changes:
 
+- `0.1.5`: removed the yellow volume knob highlight and aligned the
+  microphone socket with `Opt`.
 - `0.1.4`: polished the MCS2000 control layout, expanded the LCD area,
   removed unused top-strip icons, and shifted the left-side controls.
 - `0.1.3`: updated the MCS2000 LCD info line to show callsign plus

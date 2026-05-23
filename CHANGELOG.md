@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.5 - 2026-05-23
+
+- Removed the yellow highlight from the MCS2000 volume knob.
+- Aligned the microphone socket with the `Opt` button.
+
 ## 0.1.4 - 2026-05-23
 
 - Removed MCS2000 LCD side arrows and expanded the screen into that space.

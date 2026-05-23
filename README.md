@@ -110,6 +110,8 @@ loss_entity: sensor.dmr_hotspot_loss
 ber_entity: sensor.dmr_hotspot_ber
 name_entity: sensor.dmr_hotspot_name
 country_entity: sensor.dmr_hotspot_country
+channel_names:
+  "91": Worldwide
 timestamp_entity: sensor.dmr_hotspot_timestamp
 ```
 
@@ -125,6 +127,8 @@ See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 Recent changes:
 
+- `0.1.8`: slimmed the R7 card and added centered channel labels such as
+  `91 Worldwide`.
 - `0.1.7`: added Home Assistant custom-card metadata to avoid card picker
   configuration errors.
 - `0.1.6`: added README screenshots and split the R7 caller area into

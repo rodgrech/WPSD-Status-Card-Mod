@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.8 - 2026-05-23
+
+- Slimmed the R7 card proportions.
+- Centered the R7 channel line.
+- Added R7 channel labels with default `91 Worldwide` support and optional
+  `channel_names` YAML overrides.
+
 ## 0.1.7 - 2026-05-23
 
 - Added custom-card metadata used by the Home Assistant card picker.

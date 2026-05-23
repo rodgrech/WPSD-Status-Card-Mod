@@ -6,5 +6,7 @@ talkgroup_entity: sensor.dmr_hotspot_talkgroup
 mode_entity: sensor.dmr_hotspot_mode
 source_entity: sensor.dmr_hotspot_source
 loss_entity: sensor.dmr_hotspot_loss
+name_entity: sensor.dmr_hotspot_name
+country_entity: sensor.dmr_hotspot_country
 last_heard_entity: sensor.dmr_hotspot_last_heard
 status_entity: sensor.dmr_hotspot_status

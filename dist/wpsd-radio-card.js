@@ -10,6 +10,7 @@ class WpsdRadioCard extends HTMLElement {
       loss_entity: "sensor.dmr_hotspot_loss",
       ber_entity: "sensor.dmr_hotspot_ber",
       name_entity: "sensor.dmr_hotspot_name",
+      country_entity: "sensor.dmr_hotspot_country",
       timestamp_entity: "sensor.dmr_hotspot_timestamp",
       last_heard_entity: "sensor.dmr_hotspot_last_heard",
       status_entity: "sensor.dmr_hotspot_status",
@@ -48,6 +49,7 @@ class WpsdRadioCard extends HTMLElement {
     const talkgroup = this.value(this.config.talkgroup_entity, "TG ---");
     const source = this.value(this.config.source_entity, "--");
     const name = this.value(this.config.name_entity, "");
+    const country = this.value(this.config.country_entity, "");
     const timestamp = this.value(this.config.timestamp_entity, "");
     return {
       callsign,
@@ -57,6 +59,8 @@ class WpsdRadioCard extends HTMLElement {
       loss: this.value(this.config.loss_entity, "0%"),
       ber: this.value(this.config.ber_entity, "--"),
       name,
+      country,
+      countryCode: this.countryCode(country),
       caller: name && name !== "--" ? `${callsign} - ${name}` : callsign,
       timestamp,
       channel: talkgroup.replace("TG ", ""),
@@ -78,7 +82,10 @@ class WpsdRadioCard extends HTMLElement {
 
   renderMcs2000() {
     const d = this.data;
-    const displayLine = d.lastHeard.length > 30 ? `${d.callsign} ${d.talkgroup}` : d.lastHeard;
+    const displayLine =
+      d.name && d.name !== "--"
+        ? `${d.name}${d.countryCode ? ` - ${d.countryCode}` : ""}`
+        : d.countryCode || d.talkgroup;
     return `
       <style>
         ha-card{background:#101010;border-radius:8px;padding:10px;overflow:hidden;box-shadow:inset 0 0 0 1px #000,0 8px 22px rgba(0,0,0,.35)}
@@ -122,6 +129,29 @@ class WpsdRadioCard extends HTMLElement {
 
   escape(value) {
     return String(value).replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;").replaceAll('"', "&quot;");
+  }
+
+  countryCode(country) {
+    const value = String(country || "").trim();
+    if (!value || value === "--") return "";
+    const map = {
+      australia: "AUS",
+      "united states": "USA",
+      "united kingdom": "GBR",
+      england: "GBR",
+      scotland: "GBR",
+      wales: "GBR",
+      "new zealand": "NZL",
+      thailand: "THA",
+      spain: "ESP",
+      italy: "ITA",
+      turkey: "TUR",
+      indonesia: "IDN",
+      undefined: "",
+    };
+    const mapped = map[value.toLowerCase()];
+    if (mapped !== undefined) return mapped;
+    return value.length === 3 ? value.toUpperCase() : value.slice(0, 3).toUpperCase();
   }
 }
 

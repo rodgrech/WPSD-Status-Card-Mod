@@ -7,4 +7,5 @@ source_entity: sensor.dmr_hotspot_source
 loss_entity: sensor.dmr_hotspot_loss
 ber_entity: sensor.dmr_hotspot_ber
 name_entity: sensor.dmr_hotspot_name
+country_entity: sensor.dmr_hotspot_country
 timestamp_entity: sensor.dmr_hotspot_timestamp

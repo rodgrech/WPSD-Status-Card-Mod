@@ -1,5 +1,11 @@
 # Changelog
 
+## Unreleased
+
+- Changed the MCS2000 LCD to show callsign on the main line and
+  `Name - Country` on the info line.
+- Added `country_entity` support.
+
 ## 0.1.2 - 2026-05-23
 
 - Tuned MCS2000 proportions, LCD size, and text scaling.

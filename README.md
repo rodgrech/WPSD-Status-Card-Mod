@@ -125,6 +125,8 @@ See [CHANGELOG.md](CHANGELOG.md) for release history.
 
 Recent changes:
 
+- `0.1.7`: added Home Assistant custom-card metadata to avoid card picker
+  configuration errors.
 - `0.1.6`: added README screenshots and split the R7 caller area into
   callsign and `Name Country` lines.
 - `0.1.5`: removed the yellow volume knob highlight and aligned the

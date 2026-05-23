@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.1.7 - 2026-05-23
+
+- Added custom-card metadata used by the Home Assistant card picker.
+- Disabled generated preview rendering to avoid frontend configuration errors.
+
 ## 0.1.6 - 2026-05-23
 
 - Added README screenshots from the card dashboard.

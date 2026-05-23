@@ -166,4 +166,6 @@ window.customCards.push({
   type: "wpsd-radio-card",
   name: "WPSD Radio Card",
   description: "Radio-style cards for WPSD DMR Hotspot. Supports style: mcs2000 or r7.",
+  documentationURL: "https://github.com/rodgrech/WPSD-Status-Card-Mod",
+  preview: false,
 });

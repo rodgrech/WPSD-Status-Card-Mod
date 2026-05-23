@@ -75,11 +75,13 @@ talkgroup_entity: sensor.dmr_hotspot_talkgroup
 mode_entity: sensor.dmr_hotspot_mode
 source_entity: sensor.dmr_hotspot_source
 loss_entity: sensor.dmr_hotspot_loss
+name_entity: sensor.dmr_hotspot_name
+country_entity: sensor.dmr_hotspot_country
 last_heard_entity: sensor.dmr_hotspot_last_heard
 status_entity: sensor.dmr_hotspot_status
 ```
 
-Double-click the right-hand `Menu` button to invert the LCD colours.
+Click the left-side `Opt` button to invert the LCD colours.
 
 ## R7 Example
 
@@ -101,3 +103,14 @@ timestamp_entity: sensor.dmr_hotspot_timestamp
 This card pairs with:
 
 [WPSD Home Assistant](https://github.com/rodgrech/WPSD-home-assistant)
+
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md) for release history.
+
+Recent changes:
+
+- `0.1.4`: polished the MCS2000 control layout, expanded the LCD area,
+  removed unused top-strip icons, and shifted the left-side controls.
+- `0.1.3`: updated the MCS2000 LCD info line to show callsign plus
+  `Name - Country`.

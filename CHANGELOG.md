@@ -1,6 +1,14 @@
 # Changelog
 
-## Unreleased
+## 0.1.4 - 2026-05-23
+
+- Removed MCS2000 LCD side arrows and expanded the screen into that space.
+- Removed unused MCS2000 top-strip status icons.
+- Enlarged the volume knob.
+- Lowered the microphone socket.
+- Shifted the left-side Zone/Page/Opt controls to the right.
+
+## 0.1.3 - 2026-05-23
 
 - Changed the MCS2000 LCD to show callsign on the main line and
   `Name - Country` on the info line.
